@@ -97,7 +97,7 @@ header {
     color: #eab84d;
     border: 1.5px solid #e6b648;
     cursor: pointer;
-
+    
 }
 
 #telaInicio h1, p {
@@ -154,13 +154,14 @@ header {
     position: relative;
     text-align: center;
     color: #eab84d;
-    bottom: 50px;
+    bottom: 60px;
 }
 
 .tituloResolvemos {
     position: relative;
     top: -50px;
 }
+
 
 table {
     display: flex;
@@ -194,9 +195,30 @@ td h1 {
 }
 
 #confuso {
-    height: 140px;
+    position: relative;
+    top: -20px;
+    height: 150px;
 }
 
 #resolvemos1, #resolvemos2, #resolvemos3 {
     padding: 70px 100px;
+}
+
+.descricaoResolvemos {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eadaf5;
+}
+
+#sobrecarregadoResolvemos {
+    position: relative;
+    top: 5px;
+}
+
+#confusoResolvemos {
+    position: relative;
+    top: -13px;
 }
