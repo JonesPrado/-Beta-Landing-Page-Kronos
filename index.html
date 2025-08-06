@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
     <header>
         <div id="logo">
-            <img src="Imagens Kronos/favicon.ico" alt="Kronos Logo" id="logoKronos">
+            <img src="Imagens Kronos/favicon.ico" alt="Kronos Logo" class="logoKronos">
             <h1>Kronos</h1>
         </div>
         <div id="menu">
@@ -31,10 +31,8 @@
     <img src="Imagens Kronos/Engrenagem Kronos.png" alt="" class="engrenagemKronos" id="engKronos1">
     <div id="telaInicio">
         <h1 id="bordaoKronos">Tempo não volta, <br> produção também não</h1>
-        <p id="bordao">Alocação automática de tarefas, painéis inteligentes e foco no <br> bem-estar da equipe. Tudo em
-            um só
-            sistema.</p>
-        <button>Entre em contato</button>
+        <p id="bordao">Alocação automática de tarefas, painéis inteligentes e foco no <br> bem-estar da equipe. Tudo em um só sistema.</p>
+        <button onclick="document.getElementById('distribuicaoTarefas').scrollIntoView({ behavior: 'smooth' });">Entre em contato</button>
     </div>
     <img src="Imagens Kronos/Engrenagem Kronos.png" alt="" class="engrenagemKronos" id="engKronos2">
 
@@ -46,20 +44,53 @@
 
     </div>
 
-    <div id="problemasQueResolvemos">
-        <h1>Problemas que resolvemos</h1>
-        <table>
-            <tr>
-                <td id="resolvemos1"> <h1 class="tituloResolvemos"> Planejamento <br> manual pesado </h1> <img src="Imagens Kronos/Sobrecarregado.png" alt="" id="sobrecarregado"> <p class="descricaoResolvemos" id="sobrecarregadoResolvemos"> Supervisores gastam <br> tempo montando listas <br> diárias. </p> </td>
-                <td id="resolvemos2"> <h1 class="tituloResolvemos"> Absenteísmo </h1> <img src="Imagens Kronos/Calendário.png" alt="" id="calendario"> <p class="descricaoResolvemos" id="calendarioResolvemos"> Ausência dos funcionários do <br> seu posto de trabalho. </p></td>
-                <td id="resolvemos3"> <h1 class="tituloResolvemos"> Falta de <br> transparência </h1><img src="Imagens Kronos/Confuso.png" alt="" id="confuso"> <p class="descricaoResolvemos" id="confusoResolvemos"> Difícil saber quem fez o <br> quê e quando. </p> </td>
-            </tr>
-        </table>
-
+    <div class="prePag">
+        <div id="problemasQueResolvemos">
+            <h1>Problemas que resolvemos</h1>
+            <table>
+                <tr>
+                    <td id="resolvemos1"> <h1 class="tituloResolvemos"> Planejamento <br> manual pesado </h1> <img src="Imagens Kronos/Sobrecarregado.png" alt="" id="sobrecarregado"> <p class="descricaoResolvemos" id="sobrecarregadoResolvemos"> Supervisores gastam <br> tempo montando listas <br> diárias. </p> </td>
+                    <td id="resolvemos2"> <h1 class="tituloResolvemos"> Absenteísmo </h1> <img src="Imagens Kronos/Calendário.png" alt="" id="calendario"> <p class="descricaoResolvemos" id="calendarioResolvemos"> Ausência dos funcionários do <br> seu posto de trabalho. </p></td>
+                    <td id="resolvemos3"> <h1 class="tituloResolvemos"> Falta de <br> transparência </h1><img src="Imagens Kronos/Confuso.png" alt="" id="confuso"> <p class="descricaoResolvemos" id="confusoResolvemos"> Difícil saber quem fez o <br> quê e quando. </p> </td>
+                </tr>
+            </table>
+        </div>
     </div>
-
+    
     <div id="beneficiosQueTrazemos">
         <h1>Benefícios que trazemos</h1>
+        <img src="Imagens Kronos/favicon.ico" alt="" id="kroninhos1" class="logoKronos">
+        <img src="Imagens Kronos/favicon.ico" alt="" id="kroninhos2" class="logoKronos">
+    </div>
+    
+    <div class="prePag">
+        <div id="telaBeneficiosQueTrazemos">
+            
+            <div id="distribuicaoTarefas">
+                <div id="visualDistribuicaoTarefas"> <img src="https://thumbs.dreamstime.com/b/concep%C3%A7%C3%A3o-do-%C3%ADcone-da-linha-de-imagem-galeria-design-para-simples-web-e-ui-o-seu-projeto-233784855.jpg" alt=""> </div>
+                <div id="textoDistribuicaoTarefas" class="textosTelaBeneficiosQueTrazemosDireita"> 
+                    <h1>Redução de retrabalho e atrasos</h1> 
+                    <p>A melhor distribuição evita tempo <br> perdido e uso ineficiente dos turnos.</p> 
+                </div>
+            </div>
+
+            <div id="parteSupervisor">
+                <div id="textoParteSupervisor" class="textosTelaBeneficiosQueTrazemosEsquerda">
+                    <h1>Visão clara da produção em tempo real</h1>
+                    <p>A plataforma web de supervisão permite a <br> visualização por setor/turno com status em <br> tempo real.</p>
+                </div>
+                <div id="visualParteSupervisor"> <img src="https://thumbs.dreamstime.com/b/concep%C3%A7%C3%A3o-do-%C3%ADcone-da-linha-de-imagem-galeria-design-para-simples-web-e-ui-o-seu-projeto-233784855.jpg" alt=""></div>
+            </div>
+
+            <div id="saudeColaborador">
+                <div id="visualSaudeColaborador"> <img src="https://thumbs.dreamstime.com/b/concep%C3%A7%C3%A3o-do-%C3%ADcone-da-linha-de-imagem-galeria-design-para-simples-web-e-ui-o-seu-projeto-233784855.jpg" alt=""></div>
+                <div id="textoSaudeColaborador" class="textosTelaBeneficiosQueTrazemosDireita">
+                    <h1>Equipes menos sobrecarregadas e mais engajadas</h1>
+                    <p>Nosso sistema contribui para o bem-estar do colaborador, <br> com lista de tarefas claras e pausas planejadas.</p>
+                </div> 
+            </div>
+
+        </div>
     </div>
 
     <script src="script.js"></script>
